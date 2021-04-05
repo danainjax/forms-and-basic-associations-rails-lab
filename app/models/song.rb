@@ -20,6 +20,7 @@ class Song < ActiveRecord::Base
     self.genre ? self.genre.name : nil
   end
 
+  # ask about the below methods during pod on Monday
   def note_contents=(contents)
     contents.each do |content|
       if content.strip != ""
